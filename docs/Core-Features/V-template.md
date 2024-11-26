@@ -4,7 +4,7 @@ title: "Feat: Template"
 ---
 
 import {ClipboardIcon} from 'hugeicons-react';
-import Button from '@site/src/components/Button';
+import Button from '../../src/components/Button';
 
 # Feature-template <ClipboardIcon className='icon' /> 
 

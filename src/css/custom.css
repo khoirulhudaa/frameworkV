@@ -489,7 +489,7 @@
   transform: rotate(-35deg);
   animation: aster2b 10s ease-in infinite;
   background-color: gold;
-  border-radius: 11px;
+  border-radius: 10px;
 }
 
 @keyframes aster2b {
@@ -512,11 +512,11 @@
   transform: rotate(-30deg);
   animation: aster3a 10s 5s ease-in infinite;
   background-color: purple;
-  border-radius: 11px;
+  border-radius: 10px;
 }
 
 @keyframes aster3a {
-    0% {
+    0% {  
       top: -17%;
       right: 75%;
     }

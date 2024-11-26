@@ -4,7 +4,7 @@ title: Download sources
 ---
 
 import {CloudDownloadIcon} from 'hugeicons-react';
-import Button from '@site/src/components/Button';
+import Button from '../src/components/Button';
 
 # Download sources <CloudDownloadIcon className='icon' />
 
@@ -32,5 +32,5 @@ We will explain the use of each file and folder in the download.
 - `component-features.js` valclass.js has functions like cdn link (features)
 
 :::danger
-- You don't need to change the rest (not recommended)
+- You don't need to change the rest (not recommended)!
 :::
