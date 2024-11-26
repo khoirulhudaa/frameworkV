@@ -8,7 +8,7 @@ import Button from '@site/src/components/Button';
 
 # Feature-template <ClipboardIcon className='icon' /> 
 
-template build with pure valclass framework.
+Template build with pure valclass framework.
 
 <Button label="Download now - (9.5mb)" link="https://github.com/valclassdevelop/foodyar_template-valclass/archive/refs/heads/main.zip" />
 
