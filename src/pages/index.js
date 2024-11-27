@@ -83,7 +83,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='w-[90vw] mt-0 mx-auto h-[0.6px] lg:inline hidden bg-slate-300 mb-4'></div>
+        <div className='w-[90vw] mt-0 mx-auto h-[0.6px] lg:flex hidden bg-slate-300 mb-4'></div>
         
         <div className='lg:flex mx-auto w-[90vw] lg:mt-0 mt-4 text-justify'>
           <div className='w-full lg:w-1/2 h-max p-3'>
@@ -95,7 +95,7 @@ export default function Home() {
               building a small website or a complex web application
             </p>
           </div>
-          <div className='w-full lg:w-[1px] bg-slate-300 h-[1px] lg:h-[200px] lg:mb-0 mb-4 lg:mx-3'></div>
+          <div className='w-full lg:w-[0.8px] bg-slate-200 h-[1px] lg:h-[200px] lg:mb-0 mb-4 lg:mx-3'></div>
           <div className='w-full lg:w-1/2 h-max p-3'>
             <h3 className='font-bold mx-auto text-center w-full text-[1.6rem] text-black'>flexiblezel</h3>
             <p className='text-center leading-loose text-slate-500 text-[14px] lg:text-[12px] mt-2'>
