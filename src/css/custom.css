@@ -489,7 +489,7 @@
   transform: rotate(-35deg);
   animation: aster2b 10s ease-in infinite;
   background-color: gold;
-  border-radius: 10px;
+  border-radius: 11px;
 }
 
 @keyframes aster2b {

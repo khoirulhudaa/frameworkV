@@ -27,7 +27,7 @@ const Button = ({
     const variantClass = variant ? `button--${variant}` : '';
     const blockClass = block ? 'button--block' : '';
     const disabledClass = disabled ? 'disabled' : '';
-    // If the button is disabled, set the destination to null.
+    // If the button is disabled, set the destination to null
     const destination = disabled ? null : link;
     return (
         <Link to={destination}>

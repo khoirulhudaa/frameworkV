@@ -4,7 +4,7 @@ title: Download sources
 ---
 
 import {CloudDownloadIcon} from 'hugeicons-react';
-import Button from '../src/components/Button';
+import Button from '@site/src/components/Button';
 
 # Download sources <CloudDownloadIcon className='icon' />
 
