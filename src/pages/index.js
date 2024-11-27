@@ -55,27 +55,27 @@ export default function Home() {
               Version 1.0.0 - new released 
               <AiMagicIcon className='ml-1' />
             </div>
-            <h1 className='text-[2.8rem] lg:text-[3.7rem] font-bold w-[90vw] lg:w-[80vw] text-center'>
+            <h1 className='text-[2.6rem] lg:text-[3.7rem] font-bold w-[90vw] lg:w-[80vw] text-center'>
               Build modern website easily <br /> no CSS required.
             </h1>
-            <p className='text-slate-500 w-[90%] lg:w-[50%]'>A utility-first CSS framework packed with classes like v-pt-4, <span className='bg-blue-400 text-white rounded-full h-max pb-[2px] text-[14px] px-2'>v-d-flex</span>, text-center and rotate-90 that can be composed to build any design, directly in your code.</p>
+            <p className='text-slate-500 lg:text-[16px] text-[13px] w-[90%] lg:w-[50%]'>A utility-first CSS framework packed with classes like v-pt-4, <span className='bg-blue-400 text-white rounded-full h-max pb-[2px] text-[14px] px-2'>v-d-flex</span>, text-center and rotate-90 that can be composed to build any design, directly in your code.</p>
             <Link to={'/docs/getStarted'}>
               <div className='relaative no-underline mt-4 px-14 py-2.5 font-medium text-[18px] lg:text-[15px] bg-blue-500 text-white rounded-full cursor-pointer'>
                 Get started <LaptopProgrammingIcon className='ml-1 w-4 h-4 relative top-[1.5px]' />
               </div>
             </Link>
 
-            <div className='text-[14px] mt-6 w-max flex items-center mx-auto'>
-              <div className='w-[30%] lg:w-max flex items-center px-3 py-1.5 rounded-full text-red-500 bg-red-100'>
-                <EthereumRectangleIcon className='w-4 h-4 relative mr-2' />
+            <div className='text-[14px] mt-6 w-[90vw] lg:w-max flex items-center mx-auto'>
+              <div className='w-[30%] justify-center lg:w-max flex items-center px-3 py-1.5 rounded-full text-red-500 bg-red-100'>
+                <EthereumRectangleIcon className='w-4 h-4 relative mr-2 lg:inline hidden' />
                 Utilities
               </div>
-              <div className='w-[30%] lg:w-max mx-4 flex items-center px-3 py-1.5 rounded-full text-purple-500 bg-purple-100'>
-                <Blockchain04Icon className='w-4 h-4 relative mr-2' />
+              <div className='w-[30%] justify-center lg:w-max mx-4 flex items-center px-3 py-1.5 rounded-full text-purple-500 bg-purple-100'>
+                <Blockchain04Icon className='w-4 h-4 relative mr-2 lg:inline hidden' />
                 Components
               </div>
-              <div className='w-[30%] lg:w-max flex items-center px-3 py-1.5 rounded-full text-green-500 bg-green-100'>
-                <CommandIcon className='w-4 h-4 relative mr-2' />
+              <div className='w-[30%] justify-center lg:w-max flex items-center px-3 py-1.5 rounded-full text-green-500 bg-green-100'>
+                <CommandIcon className='w-4 h-4 relative mr-2 lg:inline hidden' />
                 Features
               </div>
             </div>
@@ -87,7 +87,7 @@ export default function Home() {
         <div className='lg:flex mx-auto w-[90vw] text-justify'>
           <div className='w-full lg:w-1/2 h-max p-3'>
             <h3 className='font-bold mx-auto text-center w-full text-[1.6rem] text-black'>Customizable</h3>
-            <p className='text-center leading-loose text-slate-500 text-[12px] mt-2'>
+            <p className='text-center leading-loose text-slate-500 text-[13px] lg:text-[12px] mt-2'>
               The ValClass is a highly customizable CSS framework that allows you to easily adjust colors, 
               typography, and components to fit your needs. With simple configuration, you can tweak 
               styles and add custom utilities without altering the core structure. Whether you’re 
@@ -97,7 +97,7 @@ export default function Home() {
           <div className='w-full lg:w-[1px] bg-slate-300 h-[1px] lg:h-[200px] lg:inline hidden lg:mx-3'></div>
           <div className='w-full lg:w-1/2 h-max p-3'>
             <h3 className='font-bold mx-auto text-center w-full text-[1.6rem] text-black'>flexiblezel</h3>
-            <p className='text-center leading-loose text-slate-500 text-[12px] mt-2'>
+            <p className='text-center leading-loose text-slate-500 text-[13px] lg:text-[12px] mt-2'>
               The Framework ValClass is a flexible CSS framework that adapts to various design needs, 
               offering an array of utilities and components that can be easily adjusted. 
               Whether you're building a simple layout or a complex web app, ValClass ensures 
@@ -146,8 +146,8 @@ export default function Home() {
                   </div>
                 </a>
               </div>
-              <p className='text-slate-500 w-[90%] lg:w-[50%] mt-5 text-[12px]'>
-              Developers who have contributed to the development of the ValClass framework. We appreciate the help and effort that has been put in
+              <p className='text-slate-500 w-full lg:w-[50%] mt-5 text-[13px] lg:text-[12px]'>
+                Developers who have contributed to the development of the ValClass framework. We appreciate the help and effort that has been put in
               </p>
             </div>
         </div>
