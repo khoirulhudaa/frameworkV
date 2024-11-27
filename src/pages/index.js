@@ -59,7 +59,7 @@ export default function Home() {
             <h1 className='text-[2.6rem] lg:ml-0 ml-5 lg:text-[3.7rem] font-bold w-[90vw] lg:w-[80vw] lg:text-center'>
               Build modern website easily <br /> no CSS required.
             </h1>
-            <p className='text-slate-500 lg:ml-0 ml-5 lg:text-[16px] text-[14px] w-[90%] lg:w-[50%]'>A utility-first CSS framework packed with classes like v-pt-4, <span className='bg-transparent lg:bg-blue-400 lg:text-white rounded-full h-max pb-[2px] text-[14px] lg:px-2'>v-d-flex</span>, text-center and rotate-90 that can be composed to build any design, directly in your code.</p>
+            <p className='text-slate-500 text-justify lg:text-center lg:ml-0 ml-5 lg:text-[16px] text-[14px] w-[86%] lg:w-[50%]'>A utility-first CSS framework packed with classes like v-pt-4, <span className='bg-transparent lg:bg-blue-400 lg:text-white rounded-full h-max pb-[2px] text-[14px] lg:px-2'>v-d-flex</span>, text-center and rotate-90 that can be composed to build any design, directly in your code.</p>
             <Link to={'/docs/getStarted'}>
               <div className='relative text-center lg:w-max w-[60vw] no-underline lg:ml-0 ml-5 mt-4 px-4 lg:px-14 py-3 lg:py-2.5 font-medium text-[14px] lg:text-[15px] bg-blue-500 text-white rounded-md lg:rounded-full cursor-pointer'>
                 Get started <LaptopProgrammingIcon className='ml-1 w-4 h-4 relative top-[1.5px]' />
@@ -88,7 +88,7 @@ export default function Home() {
         <div className='lg:flex mx-auto w-full lg:w-[90vw] lg:mt-0 mt-4'>
           <div className='w-full lg:w-1/2 h-max p-5 lg:p-3'>
             <h3 className='font-bold mx-auto lg:text-center w-full text-[1.6rem] text-black'>Customizable</h3>
-            <p className='lg:text-center leading-loose text-slate-500 text-[14px] lg:text-[12px] mt-2'>
+            <p className='lg:text-center text-justify lg:w-full w-[96%] leading-loose text-slate-500 text-[14px] lg:text-[12px] mt-2'>
               The ValClass is a highly customizable CSS framework that allows you to easily adjust colors, 
               typography, and components to fit your needs. With simple configuration, you can tweak 
               styles and add custom utilities without altering the core structure. Whether you’re 
@@ -98,7 +98,7 @@ export default function Home() {
           <div className='w-full lg:w-[0.8px] bg-slate-200 h-[1px] lg:h-[200px] lg:mb-0 mb-4 lg:mx-3'></div>
           <div className='w-full lg:w-1/2 h-max lg:p-3 p-5'>
             <h3 className='font-bold mx-auto lg:text-center w-full text-[1.6rem] text-black'>flexiblezel</h3>
-            <p className='lg:text-center leading-loose text-slate-500 text-[14px] lg:text-[12px] mt-2'>
+            <p className='lg:text-center text-justify lg:w-full w-[96%] leading-loose text-slate-500 text-[14px] lg:text-[12px] mt-2'>
               The Framework ValClass is a flexible CSS framework that adapts to various design needs, 
               offering an array of utilities and components that can be easily adjusted. 
               Whether you're building a simple layout or a complex web app, ValClass ensures 
