@@ -29,10 +29,11 @@ It is **highly recommended** that you have already **mastered** vanilla CSS befo
 We provide 2 CDN links in Valclass, each with a different function. The first link is intended for using utilities, while the second link provides instant features of Valclass.
 
 ```jsx title="Utilities"
-https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/valclass.js
+<script src="https://cdn.jsdelivr.net/gh/khoirulhudaa/valclass valclass.js"></script>
 ```
+
 ```jsx title="Features"
-https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/component-features.js
+<script src="https://cdn.jsdelivr.net/gh/khoirulhudaa/valclass/component-features.js"></script>
 ```
 
 :::info
