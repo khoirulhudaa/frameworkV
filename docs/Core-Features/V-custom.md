@@ -9,7 +9,7 @@ import {PenTool03Icon} from 'hugeicons-react';
 
 Specifies the value of the class in valclass
 
-You can specify the value of a CSS property using the utility classes defined in valclass. The last word of the utility class name will be used as the value for the corresponding CSS property.
+You can specify the value of a CSS property using the utility classes defined in valclass. The last word of the utility class name will be used as the value for the corresponding CSS property
 
 ## Usage: additional vocabulary
 

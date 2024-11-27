@@ -9,7 +9,7 @@ import {FlowConnectionIcon} from 'hugeicons-react';
 
 Unite multiple utilities in one variable
 
-You can now avoid using classes repeatedly for a component with the same tedious style. There's no need to enter the class multiple times when you can combine them into a single variable.
+You can now avoid using classes repeatedly for a component with the same tedious style. There's no need to enter the class multiple times when you can combine them into a single variable
 
 ## Create: v-unite-config.js
 
