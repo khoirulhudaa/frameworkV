@@ -107,7 +107,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='w-[90vw] mx-auto h-[0.6px] bg-slate-300 mt-4'></div>
+        <div className='w-[90vw] mx-auto h-[0.6px] bg-slate-300 lg:mt-4'></div>
 
         <div className='relative w-full lg:px-0 px-5 lg:w-[80vw] h-max mt-8 lg:mt-16 mb-4 lg:mb-11 mx-auto flex flex-col items-center justify-center'>
           <div className='w-full flex flex-col lg:text-center lg:items-center justify-center'>
