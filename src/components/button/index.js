@@ -1,16 +1,13 @@
-import React, { CSSProperties } from 'react';
-import clsx from 'clsx';
 import Link from '@docusaurus/Link';
-
-// Build the Button component with the specified props
-const Button = ({ 
+import clsx from 'clsx';
+import React from 'react';
+const button = ({ 
     size = null, // The size of the button (e.g., 'sm', 'lg', or null)
     outline = false, // Whether the button should be an outline button
     variant = 'info', // The color variant of the button
     block = false, // Whether the button should be a block-level button
     disabled = false, // Whether the button should be disabled
     className, // Custom classes for the button
-    style, // Custom styles for the button
     link, // The URL the button should link to
     label // The text of the button
 }) => {
@@ -43,4 +40,4 @@ const Button = ({
     );
 };
 
-export default Button;
+export default button;

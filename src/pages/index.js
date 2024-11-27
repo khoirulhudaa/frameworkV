@@ -44,8 +44,10 @@ export default function Home() {
           <div className="w-[1px] h-screen absolute top-0 left-[90%] bg-slate-100"></div>
           <div className="w-[1px] h-screen absolute top-0 left-[100%] bg-slate-100"></div>
         </div>
-          <img src='/img/gr.svg' alt='gradient' className='fixed left-[-8%] top-[35%] w-[60%] opacity-50' />
-          <img src='/img/gr4.svg' alt='gradient' className='fixed right-[-20%] top-[-40%] w-[100%]' />
+          <img src='/img/gr.svg' alt='gradient' id='gr1' className='fixed left-[-7%] top-[32%] w-[65%] opacity-60' />
+
+          <img src='/img/gr4.svg' alt='gradient1' className='gr1' />
+          <img src='/img/gr2.svg' alt='gradient2' className='gr2' />
           <div className='relative w-full h-[80vh] text-center mx-auto flex flex-col justify-center items-center'>
             <div className='rounded-full flex bg-blue-100 text-blue-400 h-max w-max px-3 py-1 mb-2 items-center justify-center'>
               <AiMagicIcon className='mr-1' />
@@ -122,10 +124,10 @@ export default function Home() {
                 </a>
                 <a href='https://github.com/MYFRA' target='__blank'>
                   <div div className='w-max flex items-center mx-6'>
-                    <div className='w-[54px] h-[54px] p-1.5 bg-slate-100 rounded-full overflow-hidden' title='myFRA'>
-                      <img src='/img/cont2.jpg' alt='contributor' className='rounded-full w-full h-full object-cover' />
+                    <div className='w-[54px] h-[54px] p-1.5 bg-blue-100 rounded-full overflow-hidden' title='myFRA'>
+                      <img src='/img/cont3.png' alt='contributor' className='rounded-full w-full h-full object-cover' />
                     </div>
-                    <div className='w-max flex ml-3 items-center text-[12px] px-3 py-1.5 rounded-full text-slate-500 bg-slate-100'>
+                    <div className='w-max flex ml-3 items-center text-[12px] px-3 py-1.5 rounded-full text-white bg-blue-500'>
                       <EthereumRectangleIcon className='w-4 h-4 relative mr-2' />
                       Github
                     </div>
@@ -134,7 +136,7 @@ export default function Home() {
                 <a href='https://github.com/MYFRA' target='__blank'>
                   <div div className='w-max flex items-center'>
                     <div className='w-[54px] h-[54px] p-1.5 bg-slate-100 rounded-full overflow-hidden' title='myFRA'>
-                      <img src='/img/cont3.png' alt='contributor' className='rounded-full w-full h-full object-cover' />
+                      <img src='/img/cont2.jpg' alt='contributor' className='rounded-full w-full h-full object-cover' />
                     </div>
                     <div className='w-max flex ml-3 items-center text-[12px] px-3 py-1.5 rounded-full text-slate-500 bg-slate-100'>
                       <EthereumRectangleIcon className='w-4 h-4 relative mr-2' />

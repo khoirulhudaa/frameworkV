@@ -42,6 +42,47 @@
   top: 1px;
 }
 
+.gr1 {
+  position: fixed;
+  width: 150%;
+  height: 150%;
+  top: -20%;
+  right: -20%;
+  animation: gr1 4s ease-in infinite;
+}
+
+@keyframes gr1 {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+      opacity: 100%;
+    }
+  }
+  
+.gr2 {
+    position: fixed;
+    width: 150%;
+    height: 150%;
+    top: -20%;
+    right: -20%;
+    animation: gr2 4s ease-in infinite;
+}
+
+@keyframes gr2 {
+    0% {
+      opacity: 0%;
+    }
+    50% {
+      opacity: 100%;
+    }
+    100% {
+      opacity: 0%;
+    }
+}
 
 #asteroid1 {
   position: absolute;
