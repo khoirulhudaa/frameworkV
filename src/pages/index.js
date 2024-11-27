@@ -61,7 +61,7 @@ export default function Home() {
             </h1>
             <p className='text-slate-500 lg:text-[16px] text-[13px] w-[90%] lg:w-[50%]'>A utility-first CSS framework packed with classes like v-pt-4, <span className='bg-blue-400 text-white rounded-full h-max pb-[2px] text-[14px] px-2'>v-d-flex</span>, text-center and rotate-90 that can be composed to build any design, directly in your code.</p>
             <Link to={'/docs/getStarted'}>
-              <div className='relaative no-underline mt-4 px-6 lg:px-14 py-2.5 font-medium text-[18px] lg:text-[15px] bg-blue-500 text-white rounded-full cursor-pointer'>
+              <div className='relaative no-underline mt-4 px-4 lg:px-14 py-2 lg:py-2.5 font-medium text-[16px] lg:text-[18px] lg:text-[15px] bg-blue-500 text-white rounded-full cursor-pointer'>
                 Get started <LaptopProgrammingIcon className='ml-1 w-4 h-4 relative top-[1.5px]' />
               </div>
             </Link>
