@@ -14,12 +14,12 @@ export default function Home() {
       <main className='ooverflow-x-hidden w-screen'>
 
 
-        <div id='asteroid1b'></div>
-        <div id='asteroid2b'></div>
-        <div id='asteroid1b2'></div>
-        <div id='asteroid3b'></div>
-        <div id='asteroid4b'></div>
-        <div id='asteroid5b'></div>
+        <div id='asteroid1b' className='lg:inline hidden'></div>
+        <div id='asteroid2b' className='lg:inline hidden'></div>
+        <div id='asteroid1b2' className='lg:inline hidden'></div>
+        <div id='asteroid3b' className='lg:inline hidden'></div>
+        <div id='asteroid4b' className='lg:inline hidden'></div>
+        <div id='asteroid5b' className='lg:inline hidden'></div>
 
         <div className='relative w-full h-full flex justify-center'>
           <div className="absolute w-full h-full overflow-hidden">
@@ -51,7 +51,7 @@ export default function Home() {
           <img src='/img/gr2.svg' alt='gradient2' className='gr2' />
 
           <div className='relative w-full lg:mt-0 mt-9 h-max lg:h-[80vh] text-center mx-auto flex flex-col justify-center items-center'>
-            <div className='rounded-full flex bg-blue-100 text-blue-400 h-max w-max px-3 py-1 mb-2 items-center justify-center'>
+            <div className='rounded-full flex bg-blue-100 lg:text-[16px] text-[13px] text-blue-400 h-max w-max px-3 py-1 mb-2 items-center justify-center'>
               <AiMagicIcon className='mr-1' />
               Version 1.0.0 - new released 
               <AiMagicIcon className='ml-1' />
@@ -61,7 +61,7 @@ export default function Home() {
             </h1>
             <p className='text-slate-500 lg:text-[16px] text-[13px] w-[90%] lg:w-[50%]'>A utility-first CSS framework packed with classes like v-pt-4, <span className='bg-blue-400 text-white rounded-full h-max pb-[2px] text-[14px] px-2'>v-d-flex</span>, text-center and rotate-90 that can be composed to build any design, directly in your code.</p>
             <Link to={'/docs/getStarted'}>
-              <div className='relaative no-underline mt-4 px-14 py-2.5 font-medium text-[18px] lg:text-[15px] bg-blue-500 text-white rounded-full cursor-pointer'>
+              <div className='relaative no-underline mt-4 px-6 lg:px-14 py-2.5 font-medium text-[18px] lg:text-[15px] bg-blue-500 text-white rounded-full cursor-pointer'>
                 Get started <LaptopProgrammingIcon className='ml-1 w-4 h-4 relative top-[1.5px]' />
               </div>
             </Link>
