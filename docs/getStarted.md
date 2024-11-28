@@ -7,7 +7,7 @@ import {PackageOpenIcon} from 'hugeicons-react';
 
 # The Introduction <PackageOpenIcon className='icon' />
 
-Welcome to the CSS Framework documentation - Valclass! This website will give you an introduction to 90% of Valclass concepts that might encourage you to use it every day.
+Welcome to the CSS Framework documentation - Valclass! This website will give you an introduction to 90% of Valclass concepts that might encourage you to use it every day
 
 ## Getting Started
 

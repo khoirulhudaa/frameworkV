@@ -8,7 +8,7 @@ import Button from '@site/src/components/button';
 
 # Download sources <CloudDownloadIcon className='icon' />
 
-Download Valclass now to get the compiled JavaScript code files from Valclass, ready to <br /> be used in your project. All the necessary code files are available for download [here](https://github.com/valclassdevelop/valclasssave/archive/refs/heads/bengbeng.zip).
+Download Valclass now to get the compiled JavaScript code files from Valclass, ready to <br /> be used in your project. All the necessary code files are available for download [here](https://github.com/valclassdevelop/valclasssave/archive/refs/heads/bengbeng.zip)
 
 <Button label="Download source - (1.394kb)" link="https://github.com/valclassdevelop/valclasssave/archive/refs/heads/bengbeng.zip" />
 

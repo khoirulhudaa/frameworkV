@@ -75,6 +75,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
       // Replace with your project's social card
       image: 'img/logo.png',
       navbar: {
@@ -85,8 +90,8 @@ const config = {
         },
         items: [
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://github.com/khoirulhudaa/valclass',
+            label: 'Contributors',
             position: 'right',
           },
         ],

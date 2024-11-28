@@ -1,11 +1,48 @@
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import '../css/custom.css'
-import {AiMagicIcon, LaptopProgrammingIcon, Blockchain04Icon, CommandIcon, EthereumRectangleIcon} from 'hugeicons-react';
 import Link from '@docusaurus/Link';
+import Layout from '@theme/Layout';
+import { AiMagicIcon, Blockchain04Icon, Cancel01Icon, CommandIcon, Copy01Icon, EthereumRectangleIcon, LaptopProgrammingIcon } from 'hugeicons-react';
+import { useState } from 'react';
+import '../css/custom.css';
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+
+  const [isHovered, setIsHovered] = useState(false);
+  const [isActive, setIsActive] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
+  const [isActive2, setIsActive2] = useState(false);
+
+  const style = {
+    borderLeft: '1px solid gray',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingLeft: '10px',
+    marginLeft: '10px',
+    cursor: 'pointer',
+    filter: isHovered ? `brightness('96%')` : `brightness('100%')`,
+    transform: isActive ? `scale(0.97)` : `scale(1)`
+  };
+  
+  const style2 = {
+    position: 'relative',       
+    fontSize: '14px',          
+    borderRadius: '0.375rem',     
+    display: 'flex',             
+    height: 'max-content',       
+    alignItems: 'center',        
+    justifyContent: 'center',    
+    paddingLeft: '0.75rem',      
+    border: '1px solid rgb(203 213 225)',
+    paddingRight: '0.75rem',     
+    paddingTop: '0.5rem',        
+    paddingBottom: '0.5rem',     
+    backgroundColor: 'white',    
+    color: 'rgb(37, 99, 235)',  
+    cursor: 'pointer',
+    filter: isHovered2 ? `brightness('96%')` : `brightness('100%')`,
+    transform: isActive2 ? `scale(0.97)` : `scale(1)`
+  };
+
   return (
     <Layout
       description="Description will go into a meta tag in <head />"
@@ -109,6 +146,53 @@ export default function Home() {
 
         <div className='w-[90vw] mx-auto h-[0.6px] bg-slate-300 lg:mt-4'></div>
 
+        <div className='relative w-full px-5 flex items-center lg:justify-center my-10 lg:my-14'>
+          <div className='w-[45%] hidden lg:flex lg:justify-end'>
+            <img src='/img/logo.png' alt='logo' className='w-[33%] lg:w-[18.5%]' />
+          </div>
+          <Cancel01Icon className='relative mx-4 lg:flex hidden lg:mx-16 text-slate-400' />
+          <div className='w-[45%] hidden lg:flex lg:justify-start'>
+            <img src='/img/cont3.png' alt='logo' className='w-[33%] lg:w-[22%]' />
+          </div>
+
+          <div className='w-max flex lg:hidden items-center'>
+            <img src='/img/logo.png' alt='logo' className='w-[13%]' />
+            <Cancel01Icon className='relative flex lg:hidden mx-4 lg:mx-16 text-slate-400' />
+            <img src='/img/cont3.png' alt='logo' className='w-[15%]' />
+          </div>
+        </div>
+
+        <div className='w-full lg:w-max mx-auto flex items-center lg:px-0 px-5 mt-10 '>
+          <div 
+              className='relative w-max lg:w-[200px] text-[14px] rounded-md flex h-[45px] lg:h-max items-center justify-center px-3 lg:py-2 bg-slate-100 mb-0 lg:bg-white text-slate-600 cursor-pointer'>
+              npm install valclass-ui
+              <div 
+                style={style}
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+                onMouseDown={() => setIsActive(true)}
+                onMouseUp={() => setIsActive(false)}
+              >
+                <Copy01Icon className='w-5 h-5' />
+              </div>
+          </div>
+          <div 
+              style={style2} 
+              onMouseEnter={() => setIsHovered2(true)}
+              onMouseLeave={() => setIsHovered2(false)}
+              onMouseDown={() => setIsActive2(true)}
+              onMouseUp={() => setIsActive2(false)}
+              className='relative w-max lg:w-[200px] lg:ml-0 ml-3 text-[14px] rounded-md flex h-[45px] lg:h-max items-center justify-center px-3 lg:py-2 bg-white text-blue-500 cursor-pointer'>
+              Learn Now
+          </div>
+        </div>
+
+        <p className='lg:text-center mt-6 leading-loose text-slate-500 lg:w-full w-[80%] lg:ml-0 ml-5 lg:mx-auto text-[14px] lg:text-[12px]'>
+          Framework V can be integrated with your ReactJS project. Try it now to simplify and enhance your web styling!
+        </p>
+
+        <div className='w-[90vw] mx-auto h-[0.6px] bg-slate-300 lg:mt-14'></div>
+
         <div className='relative w-full lg:px-0 px-5 lg:w-[80vw] h-max mt-8 lg:mt-16 mb-4 lg:mb-11 mx-auto flex flex-col items-center justify-center'>
           <div className='w-full flex flex-col lg:text-center lg:items-center justify-center'>
               <h2 className='text-[1.6rem]'>Contributors</h2>
@@ -147,7 +231,7 @@ export default function Home() {
                   </div>
                 </a>
               </div>
-              <p className='text-slate-500 w-full lg:w-[50%] mt-5 text-[13px] lg:text-[12px]'>
+              <p className='text-slate-500 w-full lg:w-[50%] mt-5 text-[14px] lg:text-[12px]'>
                 Developers who have contributed to the development of the ValClass framework. We appreciate the help and effort that has been put in
               </p>
             </div>
@@ -155,7 +239,7 @@ export default function Home() {
 
         <div className='w-[90vw] mx-auto h-[0.6px] bg-slate-300'></div>
 
-        <footer className='w-full h-[48px] text-slate-500 lg:text-[14px] text-[14px] flex items-center px-5 lg:justify-center'>
+        <footer className='w-full h-[48px] text-slate-500 lg:text-[14px] text-[16px] flex items-center px-5 lg:justify-center'>
           <small>#Framework css from Indonesia 2024</small>
         </footer>
       </main>
