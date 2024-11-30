@@ -11,6 +11,33 @@ export default function Home() {
   const [isHovered2, setIsHovered2] = useState(false);
   const [isActive2, setIsActive2] = useState(false);
 
+  const style0 = {
+    maxWidth: '100%',
+    minWidth: '200px',
+    fontSize: '14px',
+    borderRadius: '0.375rem', // equivalent to rounded-md
+    display: 'flex',
+    height: '45px',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingLeft: '0.75rem', // equivalent to px-3
+    paddingRight: '0.75rem', // equivalent to px-3
+    paddingTop: '0.5rem', // equivalent to lg:py-2 (applies for larger screens, can be adjusted based on breakpoints)
+    paddingBottom: '0.5rem', // equivalent to lg:py-2
+    backgroundColor: 'white', // equivalent to bg-slate-100 (light gray color)
+    marginBottom: '0',
+    color: '#475569', // equivalent to text-slate-600 (dark gray color)
+    cursor: 'pointer',
+    border: '1px solid rgb(203 213 225)',
+      '@media (min-width: 1024px)': { // For larger screens (e.g., lg)
+        height: 'auto',
+        backgroundColor: '#e2e8f0', // equivalent to lg:bg-slate-200 (lighter gray)
+        paddingTop: '0.5rem', // equivalent to lg:py-2
+        paddingBottom: '0.5rem', // equivalent to lg:py-2
+        minWidth: 'auto', // min-width is removed on larger screens
+      },
+  }
+
   const style = {
     borderLeft: '1px solid gray',
     display: 'flex',
@@ -34,8 +61,8 @@ export default function Home() {
     paddingLeft: '0.75rem',      
     border: '1px solid rgb(203 213 225)',
     paddingRight: '0.75rem',     
-    paddingTop: '0.5rem',        
-    paddingBottom: '0.5rem',     
+    paddingTop: '0.6rem',        
+    paddingBottom: '0.6rem',      
     backgroundColor: 'white',    
     color: 'rgb(37, 99, 235)',  
     cursor: 'pointer',
@@ -48,7 +75,7 @@ export default function Home() {
       description="Description will go into a meta tag in <head />"
       noFooter
     >
-      <main className='ooverflow-x-hidden w-screen'>
+      <main className='ooverflow-x-hidden'>
 
 
         <div id='asteroid1b' className='lg:inline hidden'></div>
@@ -58,7 +85,7 @@ export default function Home() {
         <div id='asteroid4b' className='lg:inline hidden'></div>
         <div id='asteroid5b' className='lg:inline hidden'></div>
 
-        <div className='relative w-full h-full flex justify-center'>
+        <div className='relative overflow-x-hidden w-full h-full flex justify-center'>
           <div className="absolute w-full h-full overflow-hidden">
             <div className="w-screen h-[1px] absolute left-0 top-[10%] bg-slate-100"></div>
             <div className="w-screen h-[1px] absolute left-0 top-[20%] bg-slate-100"></div>
@@ -122,10 +149,10 @@ export default function Home() {
 
         <div className='w-[90vw] mt-0 mx-auto h-[0.6px] lg:flex hidden bg-slate-300 mb-4'></div>
         
-        <div className='lg:flex mx-auto w-full lg:w-[90vw] lg:mt-0 mt-4'>
+        <div className='lg:flex mx-auto overflow-x-hidden w-full lg:w-[90vw] lg:mt-0 mt-4'>
           <div className='w-full lg:w-1/2 h-max p-5 lg:p-3'>
             <h3 className='font-bold mx-auto lg:text-center w-full text-[1.6rem] text-black'>Customizable</h3>
-            <p className='lg:text-center leading-loose text-slate-500 text-[14px] lg:text-[12px] mt-2'>
+            <p className='lg:text-center leading-loose text-slate-500 text-[14px] lg:text-[13px] mt-2'>
               The ValClass is a highly customizable CSS framework that allows you to easily adjust colors, 
               typography, and components to fit your needs. With simple configuration, you can tweak 
               styles and add custom utilities without altering the core structure. Whether you’re 
@@ -135,7 +162,7 @@ export default function Home() {
           <div className='w-full lg:w-[0.8px] bg-slate-200 h-[1px] lg:h-[200px] lg:mb-0 mb-4 lg:mx-3'></div>
           <div className='w-full lg:w-1/2 h-max lg:p-3 p-5'>
             <h3 className='font-bold mx-auto lg:text-center w-full text-[1.6rem] text-black'>flexiblezel</h3>
-            <p className='lg:text-center leading-loose text-slate-500 text-[14px] lg:text-[12px] mt-2'>
+            <p className='lg:text-center leading-loose text-slate-500 text-[14px] lg:text-[13px] mt-2'>
               The Framework ValClass is a flexible CSS framework that adapts to various design needs, 
               offering an array of utilities and components that can be easily adjusted. 
               Whether you're building a simple layout or a complex web app, ValClass ensures 
@@ -146,7 +173,7 @@ export default function Home() {
 
         <div className='w-[90vw] mx-auto h-[0.6px] bg-slate-300 lg:mt-4'></div>
 
-        <div className='relative w-full px-5 flex items-center lg:justify-center my-10 lg:my-14'>
+        <div className='relative overflow-x-hidden w-full px-5 flex items-center lg:justify-center my-10 lg:my-14'>
           <div className='w-[45%] hidden lg:flex lg:justify-end'>
             <img src='/img/logo.png' alt='logo' className='w-[33%] lg:w-[18.5%]' />
           </div>
@@ -162,9 +189,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='w-full lg:w-max mx-auto flex items-center lg:px-0 px-5 mt-10 '>
+        <div className='w-full overflow-x-hidden lg:w-max mx-auto flex items-center lg:px-0 px-5 mt-10 '>
           <div 
-              className='relative w-max lg:w-[200px] text-[14px] rounded-md flex h-[45px] lg:h-max items-center justify-center px-3 lg:py-2 bg-slate-100 mb-0 lg:bg-white text-slate-600 cursor-pointer'>
+              style={style0}>
               npm install valclass-ui
               <div 
                 style={style}
@@ -176,6 +203,7 @@ export default function Home() {
                 <Copy01Icon className='w-5 h-5' />
               </div>
           </div>
+          <div className='mx-3'></div>
           <div 
               style={style2} 
               onMouseEnter={() => setIsHovered2(true)}
@@ -187,13 +215,13 @@ export default function Home() {
           </div>
         </div>
 
-        <p className='lg:text-center mt-6 leading-loose text-slate-500 lg:w-full w-[80%] lg:ml-0 ml-5 lg:mx-auto text-[14px] lg:text-[12px]'>
+        <p className='lg:text-center mt-6 leading-loose text-slate-500 lg:w-full w-[80%] lg:ml-0 ml-5 lg:mx-auto text-[14px] lg:text-[13px]'>
           Framework V can be integrated with your ReactJS project. Try it now to simplify and enhance your web styling!
         </p>
 
         <div className='w-[90vw] mx-auto h-[0.6px] bg-slate-300 lg:mt-14'></div>
 
-        <div className='relative w-full lg:px-0 px-5 lg:w-[80vw] h-max mt-8 lg:mt-16 mb-4 lg:mb-11 mx-auto flex flex-col items-center justify-center'>
+        <div className='relative overflow-x-hidden w-full lg:px-0 px-5 lg:w-[80vw] h-max mt-8 lg:mt-16 mb-4 lg:mb-11 mx-auto flex flex-col items-center justify-center'>
           <div className='w-full flex flex-col lg:text-center lg:items-center justify-center'>
               <h2 className='text-[1.6rem]'>Contributors</h2>
               <div className='w-full lg:flex items-center justify-center'>
@@ -231,7 +259,7 @@ export default function Home() {
                   </div>
                 </a>
               </div>
-              <p className='text-slate-500 w-full lg:w-[50%] mt-5 text-[14px] lg:text-[12px]'>
+              <p className='text-slate-500 leading-loose w-full lg:w-[50%] mt-6 text-[14px] lg:text-[13px]'>
                 Developers who have contributed to the development of the ValClass framework. We appreciate the help and effort that has been put in
               </p>
             </div>
@@ -239,7 +267,7 @@ export default function Home() {
 
         <div className='w-[90vw] mx-auto h-[0.6px] bg-slate-300'></div>
 
-        <footer className='w-full h-[48px] text-slate-500 lg:text-[14px] text-[16px] flex items-center px-5 lg:justify-center'>
+        <footer className='w-full overflow-x-hidden h-[48px] text-slate-500 lg:text-[15px] text-[16px] flex items-center px-5 lg:justify-center'>
           <small>#Framework css from Indonesia 2024</small>
         </footer>
       </main>
