@@ -203,7 +203,7 @@ export default function Home() {
                 <Copy01Icon className='w-5 h-5' />
               </div>
           </div>
-          <div className='mx-3'></div>
+          <div className='mx-1 lg:mx-3'></div>
           <div 
               style={style2} 
               onMouseEnter={() => setIsHovered2(true)}
